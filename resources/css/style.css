@@ -1,3 +1,86 @@
 * {
   border: solid 1px black;
 }
+
+/* set base typeface */
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Lato, sans-serif;
+}
+
+a,
+p,
+span {
+  font-family: Roboto, sans-serif;
+}
+
+/* set site content widths */
+header,
+footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+section {
+  padding: 1rem 1.5rem;
+}
+
+/* set basis flex classes */
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* header */
+header {
+  height: 4rem;
+}
+
+header img {
+  margin-right: .5rem;
+}
+
+header .logo {
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+header div span:nth-child(2) {
+  font-weight: bold;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* main */
+
+/* jumbotron */
+
+/* campus */
+
+/* digital */
+
+/* thesis */
+
+/* footer */
