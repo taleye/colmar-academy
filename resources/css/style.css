@@ -1,5 +1,5 @@
 * {
-  border: solid 1px black;
+  border: solid 1px #00303F;
 }
 
 /* set base typeface */
@@ -17,6 +17,17 @@ a,
 p,
 span {
   font-family: Roboto, sans-serif;
+}
+
+/* Set colors */
+body,
+a {
+  color: #00303F;
+}
+
+/* icon colours */
+.filter {
+  filter: invert(13%) sepia(39%) saturate(3653%) hue-rotate(169deg) brightness(93%) contrast(109%);
 }
 
 /* set site content widths */
@@ -65,12 +76,17 @@ header div span:nth-child(2) {
   font-weight: bold;
 }
 
-nav li {
-  margin-right: 1rem;
+nav li a {
+  padding: 1.5rem .5rem;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
+nav li:last-child {
+  padding-right: 0;
+}
+
+nav li a:hover {
+  background-color: lightgrey;
+  font-weight: bold;
 }
 
 /* main */
