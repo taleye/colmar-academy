@@ -13,6 +13,22 @@ h3 {
   font-family: Lato, sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: .75rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
 a,
 p,
 span {
@@ -25,21 +41,31 @@ a {
   color: #00303F;
 }
 
+/*
+#00303f dark blue
+#dcae1d honey
+#7a9d96 mist
+#cae4db morning sky
+*/
+
+
 /* icon colours */
 .filter {
   filter: invert(13%) sepia(39%) saturate(3653%) hue-rotate(169deg) brightness(93%) contrast(109%);
 }
 
 /* set site content widths */
-header,
+header .container,
 footer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
+/*
 section {
   padding: 1rem 1.5rem;
 }
+*/
 
 /* set basis flex classes */
 .flex {
@@ -61,6 +87,15 @@ section {
 /* header */
 header {
   height: 4rem;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+}
+
+header .container {
+  height: 100%;
+  justify-content: space-between;
 }
 
 header img {
@@ -69,7 +104,6 @@ header img {
 
 header .logo {
     font-size: 1.2rem;
-    flex-grow: 1;
 }
 
 header div span:nth-child(2) {
@@ -85,13 +119,59 @@ nav li:last-child {
 }
 
 nav li a:hover {
-  background-color: lightgrey;
-  font-weight: bold;
+  background-color: #dcae1d;
+  color: white;
 }
 
 /* main */
+.lh-container {
+  margin: 2rem 1.5rem;
+}
+
+.rh-container {
+  margin: 1rem;
+  flex-grow: 1;
+}
 
 /* jumbotron */
+
+#jumbotron {
+  justify-content: flex-start;
+  top: 4rem;
+  position: relative;
+  background-color: #7a9d96;
+  height: 35rem;
+}
+
+#jumbotron h1,
+#jumbotron h2,
+#jumbotron a {
+  color: white;
+}
+
+.jumbo {
+  width: 60%;
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+#jumbotron .rh-container {
+  padding-right: 10rem;
+  }
+
+.jumbo-link {
+  margin: 3rem 0;
+  padding: 0.5rem 0;
+  background-color: #00303F;
+  text-align: center;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+
+}
+
 
 /* campus */
 
