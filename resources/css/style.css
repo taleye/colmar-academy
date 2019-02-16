@@ -1,11 +1,18 @@
-* {
-  border: solid 1px #00303F;
-}
 
 /* set base typeface */
 html {
   font-size: 16px;
 }
+
+body {
+    max-width: 100%;
+}
+
+/*
+* {
+      border: 1px black solid;
+}
+*/
 
 h1,
 h2,
@@ -14,19 +21,17 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: bold;
-  margin: 1rem 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
-  margin: .75rem 0;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 a,
@@ -60,12 +65,6 @@ footer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-
-/*
-section {
-  padding: 1rem 1.5rem;
-}
-*/
 
 /* set basis flex classes */
 .flex {
@@ -112,6 +111,7 @@ header div span:nth-child(2) {
 
 nav li a {
   padding: 1.5rem .5rem;
+  transition: background-color 250ms, color 250ms;
 }
 
 nav li:last-child {
@@ -119,47 +119,60 @@ nav li:last-child {
 }
 
 nav li a:hover {
-  background-color: #dcae1d;
+  background-color: #7a9d96;
   color: white;
+  border-top: .25rem solid #dcae1d;
+  border-bottom: .25rem solid #dcae1d;
+  padding: 1.25rem .5rem;
 }
 
 /* main */
-.lh-container {
-  margin: 2rem 1.5rem;
+main {
+  top: 4rem;
+  position: relative;
 }
 
-.rh-container {
-  margin: 1rem;
-  flex-grow: 1;
+.img-container {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  flex-shrink: 0;
+}
+
+.hidden {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 1.5s; /* Firefox < 16 */
+       -ms-animation: fadein 1.5s; /* Internet Explorer */
+        -o-animation: fadein 1.5s; /* Opera < 12.1 */
+           animation: fadein 1.5s;
 }
 
 /* jumbotron */
 
 #jumbotron {
-  justify-content: flex-start;
-  top: 4rem;
-  position: relative;
   background-color: #7a9d96;
-  height: 35rem;
 }
 
 #jumbotron h1,
-#jumbotron h2,
+#jumbotron h3,
 #jumbotron a {
   color: white;
 }
 
-.jumbo {
-  width: 60%;
-  background-image: url("../images/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-shrink: 0;
+#jumbotron h1 {
+  margin: 1rem 0;
+}
+
+#jumbotron h3 {
+  margin: .75rem 0;
+}
+
+#jumbotron img,
+#campus img {
+  width: 100%;
 }
 
 #jumbotron .rh-container {
-  padding-right: 10rem;
+  padding-right: 9rem;
   }
 
 .jumbo-link {
@@ -169,14 +182,60 @@ nav li a:hover {
   text-align: center;
   font-size: 1.25rem;
   border-radius: 0.25rem;
+  transition: background-color 250ms, color 250ms;
+}
 
+#jumbotron a:hover {
+  background-color: #dcae1d;
+  color: #00303F;
 }
 
 
 /* campus */
+#campus {
+  border-top: .5rem solid #dcae1d;
+  border-bottom: .5rem solid #dcae1d;
+}
+
+#campus h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  margin-top: 2.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+}
 
 /* digital */
 
 /* thesis */
 
 /* footer */
+
+
+/* To support animation */
+
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
