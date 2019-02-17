@@ -132,9 +132,19 @@ main {
   position: relative;
 }
 
-.img-container {
+img {
+  width: 100%;
+}
+
+.img-container60 {
   width: 60%;
   margin: 2rem 1.5rem;
+  flex-shrink: 0;
+}
+
+.img-container35 {
+  width: 35%;
+  margin: 1.5rem;
   flex-shrink: 0;
 }
 
@@ -166,11 +176,6 @@ main {
   margin: .75rem 0;
 }
 
-#jumbotron img,
-#campus img {
-  width: 100%;
-}
-
 #jumbotron .rh-container {
   padding-right: 9rem;
   }
@@ -181,7 +186,7 @@ main {
   background-color: #00303F;
   text-align: center;
   font-size: 1.25rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   transition: background-color 250ms, color 250ms;
 }
 
@@ -207,6 +212,45 @@ main {
   margin-top: 2.5rem;
   font-size: .8rem;
   font-weight: bold;
+}
+
+#campus .right {
+  border-left: solid .1rem #7a9d96;
+  width: 40%;
+}
+
+.campus-container {
+  border-bottom: solid .1rem #7a9d96;
+  padding-right: 1.5rem;
+}
+
+.campus-container:first-child {
+  padding-top: .5rem;
+}
+
+.campus-container:last-child {
+  background-color: #7a9d96;
+  color: white;
+}
+
+.campus-container:last-child a {
+  color: #00303F;
+}
+
+.campus-copy p {
+  margin: 1rem 0;
+}
+
+.campus-copy a {
+  color: #7a9d96;
+}
+
+.campus-copy a:hover {
+  text-decoration: underline;
+}
+
+.campus-copy {
+  padding: 1rem 0;
 }
 
 /* digital */
