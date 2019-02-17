@@ -254,6 +254,41 @@ img {
 }
 
 /* digital */
+#digital {
+  background-color: #7a9d96;
+  color: white;
+  padding: 2rem 4.5rem;
+}
+
+#digital h2 {
+  text-align: center;
+}
+
+.all-courses {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses-container {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  max-width: 30%;
+}
+
+.courses-container:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.courses-copy {
+  padding: 1rem 1rem 1.5rem 1rem;
+  background-color: white;
+  color: #00303F;
+}
+
+.courses-copy p {
+  margin-top: .5rem;
+}
+
 
 /* thesis */
 
