@@ -2,10 +2,12 @@
 /* set base typeface */
 html {
   font-size: 16px;
+
 }
 
 body {
     max-width: 100%;
+    line-height: 1.3;
 }
 
 /*
@@ -136,13 +138,13 @@ img {
   width: 100%;
 }
 
-.img-container60 {
+.container60 {
   width: 60%;
   margin: 2rem 1.5rem;
   flex-shrink: 0;
 }
 
-.img-container35 {
+.container35 {
   width: 35%;
   margin: 1.5rem;
   flex-shrink: 0;
@@ -198,8 +200,6 @@ img {
 
 /* campus */
 #campus {
-/*  border-top: .5rem solid #dcae1d;
-  border-bottom: .5rem solid #dcae1d; */
   background-color: #cae4db;
 }
 
@@ -214,42 +214,48 @@ img {
   font-weight: bold;
 }
 
-#campus .right {
-  border-left: solid .1rem #7a9d96;
+.right {
   width: 40%;
 }
 
-.campus-container {
+#campus .right {
+  border-left: solid .1rem #7a9d96;
+}
+
+#campus .rh-container {
   border-bottom: solid .1rem #7a9d96;
+}
+
+.rh-container {
   padding-right: 1.5rem;
 }
 
-.campus-container:first-child {
+.rh-container:first-child {
   padding-top: .5rem;
 }
 
-.campus-container:last-child {
+#campus .rh-container:last-child {
   background-color: #7a9d96;
   color: white;
 }
 
-.campus-container:last-child a {
+.rh-container:last-child a {
   color: #00303F;
 }
 
-.campus-copy p {
+.rh-copy p {
   margin: 1rem 0;
 }
 
-.campus-copy a {
+.rh-copy a {
   color: #7a9d96;
 }
 
-.campus-copy a:hover {
+.rh-copy a:hover {
   text-decoration: underline;
 }
 
-.campus-copy {
+.rh-copy {
   padding: 1rem 0;
 }
 
@@ -257,7 +263,7 @@ img {
 #digital {
   background-color: #7a9d96;
   color: white;
-  padding: 2rem 4.5rem;
+  padding: 2rem 3.5rem;
 }
 
 #digital h2 {
@@ -270,28 +276,50 @@ img {
 }
 
 .courses-container {
-  margin-right: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   margin-top: 2rem;
   max-width: 30%;
-}
-
-.courses-container:nth-child(3n+3) {
-  margin-right: 0;
+  min-width: 12rem;
 }
 
 .courses-copy {
   padding: 1rem 1rem 1.5rem 1rem;
   background-color: white;
   color: #00303F;
+  flex: 1 0 auto;
 }
 
 .courses-copy p {
   margin-top: .5rem;
 }
 
-
 /* thesis */
+#thesis {
+  padding-top: 2rem;
+  background-color: #cae4db;
+}
 
+#thesis h2 {
+  text-align: center;
+}
+
+#thesis .copy h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#thesis .right {
+  padding-top: 2rem;
+}
+
+#thesis .rh-container:first-child {
+  background-color: #7a9d96;
+  color: white;
+}
+
+.thesis-container {
+}
 /* footer */
 
 
