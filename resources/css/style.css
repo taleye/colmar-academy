@@ -4,15 +4,10 @@ html {
 }
 
 body {
-  max-width: 100%;
+/*  max-width: 100%; */
   line-height: 1.3;
 }
 
-/*
-* {
-      border: 1px black solid;
-}
-*/
 h1,
 h2,
 h3 {
@@ -43,6 +38,10 @@ span {
 body,
 a {
   color: #00303F;
+}
+
+.mobile {
+  display: none;
 }
 
 /*
@@ -94,7 +93,7 @@ header .container {
   justify-content: space-between;
 }
 
-header img {
+header a {
   margin-right: .5rem;
 }
 
@@ -121,6 +120,35 @@ nav li a:hover {
   border-top: .25rem solid #dcae1d;
   border-bottom: .25rem solid #dcae1d;
   padding: 1.25rem .5rem;
+}
+
+/* Mobile and tablet devices - natural break point 875px */
+@media only screen and (max-width: 875px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-flex;
+  }
+
+  nav.mobile, nav.mobile ul {
+    width: 100%;
+    }
+
+  nav li {
+    margin: 0 auto;
+  }
+
+  nav li img {
+    height: 2.5rem;
+    width: auto;
+    padding-top: .5rem;
+  }
+
+  header .container {
+    padding: 0;
+  }
 }
 
 /* main */
