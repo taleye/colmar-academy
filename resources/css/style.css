@@ -9,7 +9,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+span {
   font-family: Lato, sans-serif;
 }
 
@@ -25,16 +26,16 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
+  font-weight: bold;
 }
 
 a,
-p,
-span {
+p {
   font-family: Roboto, sans-serif;
 }
 
 /* increase font size on smaller devices by 125% */
-@media only screen and (max-width: 875px) {
+/* @media only screen and (max-width: 875px) {
   h1 {
     font-size: 3.4375rem;
   }
@@ -53,6 +54,7 @@ span {
     font-size: 1.25rem;
   }
 }
+*/
 
 /* Set colors */
 body,
@@ -293,7 +295,6 @@ img {
 
   .jumbo-link {
     margin: 1.5rem 0 2rem 0;
-    font-size: 1.5625rem;
   }
 
   .container60, .container35 {
@@ -525,7 +526,7 @@ footer {
   font-size: .8em;
 }
 
-footer span {
+footer nav a {
   margin-left: 1rem;
 }
 
@@ -533,7 +534,6 @@ footer span {
   footer {
     border: 0;
     padding: 1rem 1.5rem;
-    font-size: 1rem;
   }
 }
 
