@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="./resources/css/style.css">
+  <link rel="icon" href="./resources/images/logo.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <span>COLMAR</span><span>ACADEMY</span>
       </div>
       <nav class="desktop">
-        <ul class="flex align-center">
+        <ul class="flex align-center" role="presentation">
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
@@ -29,7 +30,7 @@
         </ul>
       </nav>
       <nav class="mobile">
-        <ul class="flex align-center">
+        <ul class="flex align-center" role="presentation">
           <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo" class="filter"></a></li>
           <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus" class="filter"></a></li>
           <li><a href="#"><img src="./resources/images/ic-online.svg" alt="Online" class="filter"></a></li>
@@ -75,7 +76,9 @@
           <div class="rh-copy flex flex-col justify-center">
             <h3>Orientation Date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="#">Read more</a>
+            <div role="presentation">
+              <i class="fa fa-angle-right"></i><a href="#">Read more</a>
+            </div>
           </div>
         </div>
         <div class="rh-container flex">
@@ -86,7 +89,9 @@
           <div class="rh-copy flex flex-col justify-center">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
-            <a href="#">Read more</a>
+            <div role="presentation">
+              <i class="fa fa-angle-right"></i><a href="#">Read more</a>
+            </div>
           </div>
         </div>
         <div class="rh-container flex">
@@ -97,7 +102,9 @@
           <div class="rh-copy flex flex-col justify-center">
             <h3><span class="desktop">Our</span><span class="mobile">Special</span> guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#">Read more</a>
+            <div role="presentation">
+              <i class="fa fa-angle-right"></i><a href="#">Read more</a>
+            </div>
           </div>
         </div>
       </div>

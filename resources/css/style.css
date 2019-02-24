@@ -30,31 +30,10 @@ h3 {
 }
 
 a,
-p {
+p,
+.logo span {
   font-family: Roboto, sans-serif;
 }
-
-/* increase font size on smaller devices by 125% */
-/* @media only screen and (max-width: 875px) {
-  h1 {
-    font-size: 3.4375rem;
-  }
-
-  h2 {
-    font-size: 2.8125rem;
-  }
-
-  h3 {
-    font-size: 2.1875rem;
-  }
-
-  a,
-  p,
-  span {
-    font-size: 1.25rem;
-  }
-}
-*/
 
 /* Set colors */
 body,
@@ -62,7 +41,7 @@ a {
   color: #00303F;
 }
 
-/*
+/* Color scheme
 #00303f dark blue
 #dcae1d honey
 #7a9d96 mist
@@ -140,6 +119,7 @@ header .logo {
 
 header div span:nth-child(2) {
   font-weight: bold;
+  margin-left: .25rem;
 }
 
 nav li a {
@@ -218,10 +198,6 @@ img {
 
 .hidden {
   -webkit-animation: fadein 1.5s;
-  /* Safari, Chrome and Opera > 12.1 */
-  /* Firefox < 16 */
-  /* Internet Explorer */
-  /* Opera < 12.1 */
   animation: fadein 1.5s;
 }
 
@@ -317,6 +293,10 @@ img {
   margin-bottom: 1.5rem;
 }
 
+#campus i {
+  margin-right: .25rem;
+}
+
 .quote {
   margin-top: 2.5rem;
   font-size: .8rem;
@@ -348,6 +328,7 @@ img {
   color: white;
 }
 
+.rh-container:last-child i,
 .rh-container:last-child a {
   color: #00303F;
 }
@@ -356,6 +337,7 @@ img {
   margin: 1rem 0;
 }
 
+.rh-copy i,
 .rh-copy a {
   color: blue;
 }
@@ -398,6 +380,7 @@ img {
     color: inherit;
   }
 
+  #campus .rh-container:last-child i,
   #campus .rh-container:last-child a {
     color: blue;
   }
@@ -550,7 +533,6 @@ footer nav a {
   }
 }
 
-/* Firefox < 16 */
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
   from {
@@ -563,5 +545,3 @@ footer nav a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   }
 }
-
-/* Internet Explorer */
